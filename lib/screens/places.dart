@@ -25,8 +25,11 @@ class PlacesScreen extends ConsumerWidget {
               icon: const Icon(Icons.add))
         ],
       ),
-      body: PlaceList(
-        places: userPlaces,
+      body: Padding(
+        padding: const EdgeInsets.all(0.8),
+        child: PlaceList(
+          places: userPlaces,
+        ),
       ),
     );
   }
